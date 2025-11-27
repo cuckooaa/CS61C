@@ -1,3 +1,4 @@
+ls -l directory_path
 Move files from one directory to the next – mv source target
 Change a file’s permissions – chmod mode file
 Show the directory you’re currently in – pwd
