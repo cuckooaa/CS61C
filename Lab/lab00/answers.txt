@@ -1,3 +1,7 @@
+Move files from one directory to the next – mv source target
+Change a file’s permissions – chmod mode file
+Show the directory you’re currently in – pwd
+Check if a host is online – ping host
 1. grep -R keyword path
 2. ps / top
 3. kill PID
