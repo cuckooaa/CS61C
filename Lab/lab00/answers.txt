@@ -1,3 +1,4 @@
+ls -l directory_path
 1. grep -R keyword path
 2. ps / top
 3. kill PID
