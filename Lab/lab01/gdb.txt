@@ -1,9 +1,13 @@
 1.
-2.
-3.
-4.
-5.
-6.
+solution:You can pass arguments directly with the run command, e.g., run arg1 arg2, or set them in advance with set args arg1 arg2.
+2.use command "break (function) or the line"
+3.use command "next"
+4.step
+5.use step or next
+solution:Use the continue command (shortened to c), which resumes execution until the next breakpoint or the end of the program.
+6.use command "print"
 7.
+solution:Use display variable_name to show the value automatically after each step. To stop displaying it, use undisplay <number>.
 8.
-9.
+solution:Use the info locals command, which lists all local variables and their current values in the active function.
+9.use "q"
