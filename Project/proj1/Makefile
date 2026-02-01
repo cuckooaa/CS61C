@@ -40,6 +40,19 @@ gameoflife: imageloader.o gameoflife.o
 gameoflifememcheck: gameoflife
 	valgrind $(VGFLAGS) ./gameOfLife testInputs/JohnConway.ppm 0x1808 > studentOutputs/temp.ppm
 
+# new addition by myself
+gameoflifediffcheck:
+	@echo "Running diff check for GliderGuns frames 10000~10100..."
+	@for n in $$(seq 10000 10100); do \
+		file="GliderGuns_0x1808_$$n.ppm"; \
+		if diff -q "./studentOutputs/GliderGuns/$$file" "./testOutputs/GliderGuns/$$file"; then \
+			echo "Frame $$n: PASS"; \
+		else \
+			echo "Frame $$n: FAIL - Files differ"; \
+		fi \
+	done
+	@echo "Diff check completed. All PASS frames are identical to testOutputs."
+
 
 %.o: %.c
 	$(CC) $(CFLAGS) $<
